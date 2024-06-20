@@ -14,7 +14,7 @@ const Actualchat = () => {
   const userid = decoded ? decoded.userid : null;
 
   useEffect(() => {
-    const newSocket = io("https://twittermernstack.onrender.com/");
+    const newSocket = io("https://twittermernstack-6lh1.vercel.app/");
     setSocket(newSocket);
 
     return () => {

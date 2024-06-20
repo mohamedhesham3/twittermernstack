@@ -27,7 +27,7 @@ const Chat = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
-    const newSocket = io("https://twittermernstack.onrender.com/");
+    const newSocket = io("https://twittermernstack-6lh1.vercel.app/");
     setSocket(newSocket);
 
     newSocket.on("receive_msg", (data) => {
