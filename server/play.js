@@ -15,9 +15,8 @@ const port = process.env.PORT;
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
 const corsOptions = {
-  origin: 'twittermernstack-hhygdp9nu-mohamedds-projects.vercel.app',
+  origin: 'https://66749f50ab5badcb467b024b--superlative-seahorse-8beb39.netlify.app/',
   credentials: true, 
 };
 
@@ -26,7 +25,7 @@ app.use("/", Router);
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "twittermernstack-hhygdp9nu-mohamedds-projects.vercel.app",
+    origin: "https://66749f50ab5badcb467b024b--superlative-seahorse-8beb39.netlify.app/",
     methods: ["GET", "POST"],
     credentials: true,
   },
