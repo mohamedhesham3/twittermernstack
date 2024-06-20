@@ -24,9 +24,10 @@ const App = () => {
           />
           
           <Route
-            path="/register"
-            element={isAuthenticated ? <Navigate to="/" /> : <Register />}
-          />
+  path="/register"
+  element={isAuthenticated ? <Navigate to="/" /> : <Register />}
+/>
+
           
           {isAuthenticated && (
             <Route path="/profile/:userid" element={<Profile />} />
