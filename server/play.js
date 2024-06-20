@@ -16,8 +16,8 @@ app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 const corsOptions = {
-  origin: 'https://66749f50ab5badcb467b024b--superlative-seahorse-8beb39.netlify.app/',
-  credentials: true, 
+  origin: 'https://6674a2d870b58fd0559eb418--golden-moonbeam-c7d3c6.netlify.app',
+
 };
 
 app.use(cors(corsOptions));
@@ -25,9 +25,8 @@ app.use("/", Router);
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "https://66749f50ab5badcb467b024b--superlative-seahorse-8beb39.netlify.app/",
-    methods: ["GET", "POST"],
-    credentials: true,
+    origin: "https://6674a2d870b58fd0559eb418--golden-moonbeam-c7d3c6.netlify.app",
+    methods: ["GET", "POST"]
   },
 });
 likes(io)
