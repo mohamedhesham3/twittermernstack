@@ -17,16 +17,18 @@ const App = () => {
             path="/"
             element={isAuthenticated ? <Home /> : <Navigate to="/login" />}
           />
-          
+                      <Route
+  path="/register"
+  element={isAuthenticated ? <Navigate to="/" /> : <Register />}
+/>
+
+
           <Route
             path="/login"
             element={isAuthenticated ? <Navigate to="/" /> : <Login />}
           />
           
-          <Route
-  path="/register"
-  element={isAuthenticated ? <Navigate to="/" /> : <Register />}
-/>
+
 
           
           {isAuthenticated && (
