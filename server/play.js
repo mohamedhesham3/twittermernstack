@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 const corsOptions = {
   origin: 'https://6674a2d870b58fd0559eb418--golden-moonbeam-c7d3c6.netlify.app',
-  credentials: true, 
+
 };
 
 app.use(cors(corsOptions));
@@ -26,8 +26,7 @@ const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
     origin: "https://6674a2d870b58fd0559eb418--golden-moonbeam-c7d3c6.netlify.app",
-    methods: ["GET", "POST"],
-    credentials: true,
+    methods: ["GET", "POST"]
   },
 });
 likes(io)
