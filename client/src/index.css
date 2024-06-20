@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* index.css */
+/* Ensure body or container has relative positioning */
+body {
+  position: relative;
+}
+
+/* Sticky styles for Nav */
+.nav-sticky {
+  position: sticky;
+  top: 0;
+  /* Adjust other styles as needed */
+}
+
+/* Sticky styles for Trends */
+.trends-sticky {
+  position: sticky;
+  top: 0;
+  right: 0;
+  /* Adjust other styles as needed */
+}
+
+/* Example of additional styles */
+.nav-sticky {
+  padding: 10px;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.trends-sticky {
+  padding: 10px;
+  z-index: 1000; /* Ensure it's above other content */
+}

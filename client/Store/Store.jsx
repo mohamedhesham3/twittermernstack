@@ -1,0 +1,12 @@
+import { atom } from 'jotai'
+export const fileupload = atom(null)
+export const username = atom('')
+export const email = atom('')
+export const password = atom('')
+export const avatar = atom('')
+export const Token = atom(null)
+export const userid = atom(null)
+export const postid = atom(null)
+export const showposts = atom(false)
+export const noti = atom(0)
+export const postfocus = atom(false)
