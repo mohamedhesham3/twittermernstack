@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const corsOptions = {
-  origin: 'http://localhost:5173',
+  origin: 'twittermernstack-hhygdp9nu-mohamedds-projects.vercel.app',
   credentials: true, 
 };
 
@@ -26,7 +26,7 @@ app.use("/", Router);
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: "twittermernstack-hhygdp9nu-mohamedds-projects.vercel.app",
     methods: ["GET", "POST"],
     credentials: true,
   },
