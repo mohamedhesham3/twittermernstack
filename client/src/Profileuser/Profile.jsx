@@ -29,7 +29,7 @@ const Profile = () => {
   const [socket, setSocket] = useState(null);
 const navigate=useNavigate()
   useEffect(() => {
-    const newSocket = io("https://twittermernstack-dpve0n29e-mohamedds-projects.vercel.app/");
+    const newSocket = io("https://twittermernstack.onrender.com");
 
     newSocket.on('connect', () => {
       console.log("new user connected");
