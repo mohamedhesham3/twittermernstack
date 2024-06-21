@@ -25,7 +25,7 @@ const App = () => {
           
           <Route
   path="/register"
-  element={isAuthenticated ? <Navigate to="/" /> : <Register />}
+  element={<Register />}
 />
 
           
