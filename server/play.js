@@ -17,10 +17,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 
-const corsOptions = {
-  origin: 'https://twittermernstack.vercel.app',
-};
-app.use(cors(corsOptions));
+
+app.use(cors(
+      origin: "https://twittermernstack-qgfknixfk-mohamedds-projects.vercel.app",
+
+));
 
 // Routes
 app.use("/", Router);
@@ -30,7 +31,7 @@ app.use("/", Router);
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "https://twittermernstack.vercel.app",
+    origin: "https://twittermernstack-qgfknixfk-mohamedds-projects.vercel.app",
     methods: ["GET", "POST"]
   },
 });
