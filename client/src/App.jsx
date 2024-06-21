@@ -5,7 +5,7 @@ import Register from './register/Register';
 import Profile from './Profileuser/Profile';
 import ViewPost from './view_post/Vewpost.jsx'; // Corrected typo here
 import Chat from './Chat/Chat';
-import NotFound from './NotFound.jsx';
+import NotFound from './NotFound'; // Corrected typo here
 import Bookmark from './bookmarks/Bookmark';
 
 const isAuthenticated = !!localStorage.getItem('token');
