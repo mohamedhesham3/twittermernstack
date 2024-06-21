@@ -1,7 +1,7 @@
 import axios from 'axios';
 const token=localStorage.getItem('token')
 const Api = axios.create({
-  baseURL: "https://twittermernstack-6lh1.vercel.app/",
+  baseURL: "https://twittermernstack-6lh1-napm5p302-mohamedds-projects.vercel.app/",
   headers: {
     'Authorization': `Bearer ${token}`
   }
