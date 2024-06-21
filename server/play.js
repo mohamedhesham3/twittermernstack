@@ -6,6 +6,7 @@ const bodyParser = require("body-parser");
 const http = require("http");
 const socketIo = require("socket.io");
 const { likes } = require("./Controllers/Post");
+const mongoose=require('./confgis/mongoose')
 require("dotenv").config();
 const { realtimechat } = require("./Controllers/Chat");
 
