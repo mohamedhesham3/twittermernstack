@@ -15,14 +15,14 @@ app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(cors({ origin: "http://localhost:5173/"}));
+app.use(cors({ origin: "https://twittermernstack-5ha3-mqmvqnviq-mohamedds-projects.vercel.app/"}));
 
 app.use("/", Router);
 
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:5173/",
+    origin: "https://twittermernstack-5ha3-mqmvqnviq-mohamedds-projects.vercel.app/",
     methods: ["GET", "POST"],
   },
 });
