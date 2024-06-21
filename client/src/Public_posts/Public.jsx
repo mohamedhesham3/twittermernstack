@@ -23,7 +23,7 @@ const Public = () => {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    const newsocket = io("https://twittermernstack-6lh1-napm5p302-mohamedds-projects.vercel.app/");
+    const newsocket = io("https://twittermernstack-dpve0n29e-mohamedds-projects.vercel.app/");
 
     newsocket.on('connect', () => {
       console.log("new user connected");
