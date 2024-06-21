@@ -15,14 +15,14 @@ app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(cors({ origin: "https://twittermernstack-5ha3-mqmvqnviq-mohamedds-projects.vercel.app/"}));
+app.use(cors({ origin: "*"}));
 
 app.use("/", Router);
 
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "https://twittermernstack-5ha3-mqmvqnviq-mohamedds-projects.vercel.app/",
+    origin: "*",
     methods: ["GET", "POST"],
   },
 });
