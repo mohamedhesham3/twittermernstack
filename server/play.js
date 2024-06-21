@@ -21,7 +21,7 @@ app.use(express.static(path.join(__dirname, 'dist')));
 
 // Middleware to handle CORS
 const corsOptions = {
-  origin: 'https://6674a2d870b58fd0559eb418--golden-moonbeam-c7d3c6.netlify.app',
+  origin: 'http://localhost:5173/',
 };
 app.use(cors(corsOptions));
 
@@ -37,7 +37,7 @@ app.get('/*', function (req, res) {
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "https://6674a2d870b58fd0559eb418--golden-moonbeam-c7d3c6.netlify.app",
+    origin: "http://localhost:5173/",
     methods: ["GET", "POST"]
   },
 });
